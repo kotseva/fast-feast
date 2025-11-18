@@ -1,6 +1,6 @@
 //
-//  Logger+Init.swift
-//  Fast&Feast
+//  Logging.swift
+//  Logging
 //
 //  Created by Angela Koceva on 19.11.25.
 //
@@ -15,8 +15,8 @@ public enum LogCategory: String {
   case exporter = "Exporter"
   case interface = "Interface"
   case siriIntent = "SiriIntent"
-  case watch = "Watch"
-  case widget = "Widget"
+    
+    //TODO: Add watch and widget
 }
 
 public extension Logger {
