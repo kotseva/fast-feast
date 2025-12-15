@@ -13,7 +13,7 @@ public enum FastingGoal {
 
   static var logger: Logger { Logger.create() }
   
-  public static var `default`: FastingGoal = .sixteFastingen
+  public static var `default`: FastingGoal = .sixteen
 
   case fourteen
   case sixteen

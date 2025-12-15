@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0AC7522EEE080400C3B9E1 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 2F0AC7512EEE080400C3B9E1 /* Algorithms */; };
+		2F0AC7552EEE081400C3B9E1 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 2F0AC7542EEE081400C3B9E1 /* SwiftDate */; };
 		2F8947152ECD3B5200792C78 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89470A2ECD3B5100792C78 /* Logging.framework */; };
 		2F89471F2ECD3B5200792C78 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89470A2ECD3B5100792C78 /* Logging.framework */; };
 		2F8947202ECD3B5200792C78 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89470A2ECD3B5100792C78 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -131,6 +133,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				FastingGoal/FastingGoal.swift,
+				"FastingGoal/FastingGoal+AllCases.swift",
+				"FastingGoal/FastingGoal+Codable.swift",
+				"FastingGoal/FastingGoal+Equality.swift",
+				"FastingGoal/FastingGoal+Identifiable.swift",
+				"FastingGoal/FastingGoal+RawRepresentable.swift",
 			);
 			target = 2F1F30992D41381E00579D97 /* Fast&Feast */;
 		};
@@ -138,6 +145,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				FastingGoal/FastingGoal.swift,
+				"FastingGoal/FastingGoal+AllCases.swift",
+				"FastingGoal/FastingGoal+Codable.swift",
+				"FastingGoal/FastingGoal+Equality.swift",
+				"FastingGoal/FastingGoal+Identifiable.swift",
+				"FastingGoal/FastingGoal+RawRepresentable.swift",
 			);
 			target = 2F89472E2ECD3D0F00792C78 /* FastStorage */;
 		};
@@ -204,6 +216,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0AC7552EEE081400C3B9E1 /* SwiftDate in Frameworks */,
+				2F0AC7522EEE080400C3B9E1 /* Algorithms in Frameworks */,
 				2F8947442ECD3D1000792C78 /* FastStorage.framework in Frameworks */,
 				2F89471F2ECD3B5200792C78 /* Logging.framework in Frameworks */,
 			);
@@ -261,12 +275,12 @@
 			isa = PBXGroup;
 			children = (
 				2F1F309C2D41381E00579D97 /* Fast&Feast */,
-				2F1F30AE2D41381F00579D97 /* Fast&FeastTests */,
-				2F1F30B82D41381F00579D97 /* Fast&FeastUITests */,
 				2F89470B2ECD3B5100792C78 /* Logging */,
 				2F89471A2ECD3B5200792C78 /* LoggingTests */,
 				2F8947302ECD3D0F00792C78 /* FastStorage */,
 				2F89473F2ECD3D1000792C78 /* FastStorageTests */,
+				2F1F30B82D41381F00579D97 /* Fast&FeastUITests */,
+				2F1F30AE2D41381F00579D97 /* Fast&FeastTests */,
 				2F89474C2ECD3D1F00792C78 /* Frameworks */,
 				2F1F309B2D41381E00579D97 /* Products */,
 			);
@@ -333,6 +347,8 @@
 			);
 			name = "Fast&Feast";
 			packageProductDependencies = (
+				2F0AC7512EEE080400C3B9E1 /* Algorithms */,
+				2F0AC7542EEE081400C3B9E1 /* SwiftDate */,
 			);
 			productName = "Fast&Feast";
 			productReference = 2F1F309A2D41381E00579D97 /* Fast&Feast.app */;
@@ -488,7 +504,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					2F1F30992D41381E00579D97 = {
 						CreatedOnToolsVersion = 16.2;
@@ -526,18 +542,22 @@
 			);
 			mainGroup = 2F1F30912D41381E00579D97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2F0AC7502EEE080400C3B9E1 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				2F0AC7532EEE081400C3B9E1 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2F1F309B2D41381E00579D97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2F1F30992D41381E00579D97 /* Fast&Feast */,
-				2F1F30AA2D41381F00579D97 /* Fast&FeastTests */,
-				2F1F30B42D41381F00579D97 /* Fast&FeastUITests */,
 				2F8947092ECD3B5100792C78 /* Logging */,
-				2F8947132ECD3B5200792C78 /* LoggingTests */,
 				2F89472E2ECD3D0F00792C78 /* FastStorage */,
 				2F8947382ECD3D1000792C78 /* FastStorageTests */,
+				2F8947132ECD3B5200792C78 /* LoggingTests */,
+				2F1F30B42D41381F00579D97 /* Fast&FeastUITests */,
+				2F1F30AA2D41381F00579D97 /* Fast&FeastTests */,
 			);
 		};
 /* End PBXProject section */
@@ -729,6 +749,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -751,6 +772,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -790,6 +812,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -805,6 +828,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -817,10 +841,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Fast&Feast/Fast_Feast.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Fast&Feast/Preview Content\"";
-				DEVELOPMENT_TEAM = FTBRGF59PK;
+				DEVELOPMENT_TEAM = UGPT5LVRHL;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fast&Feast";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -859,10 +886,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Fast&Feast/Fast_Feast.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Fast&Feast/Preview Content\"";
-				DEVELOPMENT_TEAM = FTBRGF59PK;
+				DEVELOPMENT_TEAM = UGPT5LVRHL;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fast&Feast";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -899,6 +929,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
@@ -922,6 +953,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
@@ -944,6 +976,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
@@ -966,6 +999,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
@@ -988,9 +1022,11 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FTBRGF59PK;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UGPT5LVRHL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1035,9 +1071,11 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FTBRGF59PK;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UGPT5LVRHL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1083,6 +1121,7 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
@@ -1109,6 +1148,7 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
@@ -1134,9 +1174,11 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FTBRGF59PK;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UGPT5LVRHL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1181,9 +1223,11 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FTBRGF59PK;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UGPT5LVRHL;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1229,6 +1273,7 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
@@ -1255,6 +1300,7 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = FTBRGF59PK;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
@@ -1351,6 +1397,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F0AC7502EEE080400C3B9E1 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		2F0AC7532EEE081400C3B9E1 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F0AC7512EEE080400C3B9E1 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F0AC7502EEE080400C3B9E1 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		2F0AC7542EEE081400C3B9E1 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F0AC7532EEE081400C3B9E1 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F1F30922D41381E00579D97 /* Project object */;
 }

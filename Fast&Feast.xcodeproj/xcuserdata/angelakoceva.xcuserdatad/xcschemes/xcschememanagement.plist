@@ -7,17 +7,60 @@
 		<key>Fast&amp;Feast.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>FastStorage.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Logging.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+		<key>SwiftDate (Playground) 1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SwiftDate (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2F1F30992D41381E00579D97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F1F30AA2D41381F00579D97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F1F30B42D41381F00579D97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F8947132ECD3B5200792C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F89472E2ECD3D0F00792C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F8947382ECD3D1000792C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
